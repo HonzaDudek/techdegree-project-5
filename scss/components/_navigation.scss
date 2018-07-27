@@ -1,0 +1,47 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+  margin-top: em(20px);
+  margin-bottom: em(30px);
+  @include flexbox;
+  flex-direction: column;
+  
+  @include e(item) {
+    @extend %nav-item-disp;
+    a {
+      @extend %nav-item-link;
+      color: $grey;
+      &:hover {
+        @extend %nav-item-on;  
+      }
+
+    }
+    @media (min-width: 769px) {
+      width: unset;
+    }
+    @include m(current) { 
+      @extend %nav-item-disp;
+      a {
+        @extend %nav-item-link;
+        color: $white;
+        @extend %nav-item-on;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    display: inline-block;
+  }
+}
+
+// ==========================================================================
+// Navbar
+// ==========================================================================
+
+.navbar {
+  position: relative;
+  margin-top: em(54px);
+  margin-bottom: 0;
+}

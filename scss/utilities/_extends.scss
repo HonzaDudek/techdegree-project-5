@@ -1,0 +1,87 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+// Nav Items
+
+%nav-item-disp {
+  display: inline-block;
+  margin: 0 em(12px);
+  width: 100%;
+}
+%nav-item-link {
+  font-size: em(18px);
+  font-weight: $font-weight--light;
+  display: block;
+  padding: em(8px, 18px);
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+%nav-item-on {
+  color: white;
+  border-color: $color-primary;
+  border-radius: 5px;
+  background-color: $color-primary
+}
+
+// Links
+%link {
+  text-decoration: none;
+  color: $color-secondary;
+}
+
+
+
+// Headlines
+
+%headline--primary {
+  color: $color-primary;
+  font-weight: $font-weight--bold;
+  font-size: em(42px);
+  line-height: (46px/42px);
+  margin-top: 0;
+  padding-left: em(16px);
+}
+
+%headline--secondary {
+  width: 90%;
+  color: palette(grey, light);
+  font-weight: $font-weight--thin;
+  font-size: em(16px);
+  font-family: $font-family--secondary;
+  text-align: left;
+  margin-top: 20px;
+}
+
+// Buttons
+
+%btn {
+  width: 100%;
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: inline-block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+
+//Clearfix
+
+%clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+

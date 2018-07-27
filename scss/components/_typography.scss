@@ -1,0 +1,33 @@
+//= Headlines ==/
+
+%headline--primary {
+  color: $color-primary;
+  font-weight: $font-weight--bold;
+  font-size: em(42px);
+  line-height: (46px/42px);
+  margin-top: 0;
+  padding-left: em(16px);
+  text-align: left;
+}
+
+
+.headline--secondary {
+ @extend %headline--secondary;
+}
+
+
+//= Blockquote =//
+
+.blockquote {
+  font-weight: $font-weight--medium;
+  border-left: 5px solid $color-primary;
+  border-radius: 5px 0 0 5px;
+  padding-left: 1em;
+  margin-left: 2.5em;
+  text-align: left;
+}
+
+//= Links =//
+.link {
+  @extend %link;
+}
