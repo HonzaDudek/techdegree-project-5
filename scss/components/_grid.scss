@@ -24,7 +24,7 @@
   &__row {
     width: 90%;
 
-    @media (min-width: 769px) {
+    @include display-desktop {
 
       text-align: center;
       display: flex;

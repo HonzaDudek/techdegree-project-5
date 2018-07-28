@@ -8,7 +8,7 @@
   display: inline-block;
   margin-right: em(15px, 14px);
 
-  @media (min-width: 769px ) {
+  @include display-desktop {
     align-self: stretch;
   }
 }

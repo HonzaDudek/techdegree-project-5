@@ -18,7 +18,7 @@
       }
 
     }
-    @media (min-width: 769px) {
+    @include display-desktop {
       width: unset;
     }
     @include m(current) { 
@@ -31,7 +31,7 @@
     }
   }
 
-  @media (min-width: 769px) {
+  @include display-desktop {
     display: inline-block;
   }
 }
